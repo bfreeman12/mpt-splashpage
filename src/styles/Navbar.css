@@ -1,0 +1,52 @@
+.nav {
+  position: sticky;
+  top: 0;
+  height: 5vh;
+  width: 100vw;
+  background-color: rgba(27, 26, 26, 0.842);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.nav .nav-title {
+  padding-left: 2rem;
+  color: rgb(19, 224, 224);
+  font-size: 1.5rem;
+}
+
+.nav .nav-button-group {
+  padding-right: 5%;
+}
+
+.nav .nav-button-group .nav-settings-button {
+  all: unset;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: rgb(42, 219, 219);
+  font-weight: 450;
+  transition: 0.15s;
+}
+
+.nav .nav-button-group .nav-settings-button:hover {
+  transform: scale(1.1);
+  background-color: rgb(111, 230, 230);
+}
+
+.nav .nav-button-group .nav-settings-button:active {
+  background-color: rgb(29, 209, 209);
+}
+@media (max-width: 480px) {
+  .nav .nav-title {
+    padding-left: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .nav .nav-button-group {
+    padding-right: 1rem;
+  }
+}
