@@ -1,0 +1,14 @@
+.footer {
+  position: fixed;
+  top: 95.5vh;
+  width: 100vw;
+  height: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(27, 26, 26, 0.856);
+  padding: 1rem 0 0.8rem 0;
+}
+.footer h5 {
+  color: rgba(24, 202, 202, 0.995);
+}
