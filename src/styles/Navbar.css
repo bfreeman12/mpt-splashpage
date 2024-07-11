@@ -17,35 +17,10 @@
   font-size: 1.5rem;
 }
 
-.nav .nav-button-group {
-  padding-right: 5%;
-}
 
-.nav .nav-button-group .nav-settings-button {
-  all: unset;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  background: none;
-  font-weight: 450;
-  transition: 0.15s;
-  color: rgb(19, 224, 224);
-}
-
-.nav .nav-button-group .nav-settings-button:hover {
-  transform: scale(1.1);
-  color: rgb(111, 230, 230);
-}
-
-.nav .nav-button-group .nav-settings-button:active {
-  color: rgb(29, 209, 209);
-}
 @media (max-width: 480px) {
   .nav .nav-title {
     padding-left: 0.5rem;
     font-size: 1rem;
-  }
-
-  .nav .nav-button-group {
-    padding-right: 1rem;
   }
 }

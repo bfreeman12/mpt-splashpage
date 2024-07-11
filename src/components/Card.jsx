@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/Card.css";
 
-const Card = ({ searchValue, pages }) => {
+const Card = ({ searchValue, pages, displaySelector }) => {
   const newPages = pages.filter((page) =>
     page.name.toLowerCase().includes(searchValue.toLowerCase())
   );
@@ -12,14 +12,15 @@ const Card = ({ searchValue, pages }) => {
         newPages.map((page) => (
           <div
             key={page.id}
-            className="page-card"
+            className={`page-card ${displaySelector}`}
             style={{ backgroundImage: `url(${page.img})` }}
           >
             <a target="_blank" rel="noopener noreferrer" href={page.url}>
-              <div className="card-content" title={page.url}>
-                <h5 className="card-header">{page.name}</h5>
-              </div>
+
             </a>
+            <div className={`card-content ${displaySelector}`} title={page.url}>
+                <h5 className={`card-header ${displaySelector}`}>{page.name}</h5>
+              </div>
           </div>
         ))
       ) : (

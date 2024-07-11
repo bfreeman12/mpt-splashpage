@@ -53,15 +53,49 @@
   outline: none;
 }
 
-.page-container {
+.display-selector {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.selector-button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.selector-button.active {
+  background-color: #d0d0d0;
+}
+
+.page-container.grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
   width: 100%;
   max-width: 1200px;
   padding: 1rem;
-  background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.page-container.list {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  gap:1rem;
   justify-content: center;
 }
+
+.page-container.list .page-card {
+  height:150px;
+  width:300px;
+  padding-bottom:2rem;
+}
+
+
